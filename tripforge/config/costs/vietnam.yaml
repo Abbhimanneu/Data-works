@@ -1,0 +1,74 @@
+# Cost model for Vietnam. All local amounts in VND. Edit before trusting a total.
+# Tier figures: mid-points of 2026 published ranges (see README "Sources"), rounded.
+fx:
+  currency: VND
+  inr_per_local: 0.0036   # 1 VND ≈ ₹0.0036 (mid-market, Nov 2026). Update before each trip.
+  as_of: 2026-11-05
+
+people_per_room: 2
+buffer_pct: 10
+
+international_flight_inr:   # per person, return, from Bangalore. Check real fares.
+  budget: 24000
+  mid: 32000
+  comfort: 55000
+
+tiers:
+  budget:
+    stay_per_room_night: 350000
+    food_per_person_day: 150000
+    local_transport_per_day: 80000
+  mid:
+    stay_per_room_night: 900000
+    food_per_person_day: 400000
+    local_transport_per_day: 200000
+  comfort:
+    stay_per_room_night: 1800000
+    food_per_person_day: 900000
+    local_transport_per_day: 450000
+
+stay_overrides:             # per room/cabin per night, where the city works differently
+  Ha Long:
+    budget: 3000000         # overnight cruise cabin incl. meals
+    mid: 6000000
+    comfort: 12000000
+
+legs:                       # per person, one way
+  "Hanoi -> Ninh Binh":
+    mode: car/bus
+    budget: 150000
+    mid: 400000
+    comfort: 900000
+  "Ninh Binh -> Ha Long":
+    mode: car
+    budget: 300000
+    mid: 600000
+    comfort: 1200000
+  "Ha Long -> Hoi An":
+    mode: flight via Hai Phong + transfer
+    budget: 1500000
+    mid: 2200000
+    comfort: 3500000
+  "Hoi An -> Ho Chi Minh City":
+    mode: flight from Da Nang
+    budget: 1200000
+    mid: 1700000
+    comfort: 2800000
+
+entry_fees:                 # per person; places not listed fall back to default_fee_by_kind
+  War Remnants Museum: 40000
+  Temple of Literature: 70000
+  Trang An: 250000
+  Cu Chi Tunnels: 400000    # half-day tour, not just the ticket
+  Ba Na Hills: 950000
+  Marble Mountains: 40000
+  Ha Long Bay: 0            # priced inside the cruise cabin (stay_overrides)
+
+default_fee_by_kind:
+  sight: 50000
+  nature: 100000
+  activity: 300000
+  food: 0
+  shopping: 0
+  nightlife: 0
+  other: 0

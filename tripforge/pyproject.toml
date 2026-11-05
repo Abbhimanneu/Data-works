@@ -1,0 +1,41 @@
+[project]
+name = "tripforge"
+version = "0.1.0"
+description = "Rough trip notes in; day-by-day itinerary, interactive map and costed PDF out."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "duckdb>=1.2",
+    "folium>=0.18",
+    "httpx>=0.27",
+    "matplotlib>=3.9",
+    "ollama>=0.5",
+    "pydantic>=2.8",
+    "pyyaml>=6.0",
+    "reportlab>=4.2",
+]
+
+[project.scripts]
+tripforge = "tripforge.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8.0", "ruff>=0.8", "pre-commit>=4.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tripforge"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

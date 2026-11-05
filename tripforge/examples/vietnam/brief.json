@@ -1,0 +1,42 @@
+{
+  "country": "Vietnam",
+  "days": 10,
+  "travelers": 2,
+  "budget_inr": 300000,
+  "pace": "normal",
+  "tier": "mid",
+  "interests": ["street food", "history", "nature", "beaches"],
+  "cities": [
+    {"name": "Hanoi", "nights": 3, "arrive_by": "flight"},
+    {"name": "Ninh Binh", "nights": 1, "arrive_by": "car"},
+    {"name": "Ha Long", "nights": 1, "arrive_by": "car"},
+    {"name": "Hoi An", "nights": 3, "arrive_by": "flight"},
+    {"name": "Ho Chi Minh City", "nights": 1, "arrive_by": "flight"}
+  ],
+  "places": [
+    {"name": "Hanoi Old Quarter", "city": "Hanoi", "kind": "food", "must": true, "hours": 3},
+    {"name": "Hoan Kiem Lake", "city": "Hanoi", "kind": "sight", "must": false, "hours": 1},
+    {"name": "Temple of Literature", "city": "Hanoi", "kind": "sight", "must": false, "hours": 1.5},
+    {"name": "Ho Chi Minh Mausoleum", "city": "Hanoi", "kind": "sight", "must": false, "hours": 1.5},
+    {"name": "Hanoi Train Street", "city": "Hanoi", "kind": "sight", "must": false, "hours": 1},
+    {"name": "Hoa Lo Prison", "city": "Hanoi", "kind": "sight", "must": false, "hours": 1.5},
+    {"name": "Thang Long Water Puppet Theatre", "city": "Hanoi", "kind": "activity", "must": false, "hours": 1},
+    {"name": "West Lake", "city": "Hanoi", "kind": "nature", "must": false, "hours": 2},
+    {"name": "Trang An", "city": "Ninh Binh", "kind": "nature", "must": true, "hours": 3},
+    {"name": "Hang Mua", "city": "Ninh Binh", "kind": "nature", "must": false, "hours": 2},
+    {"name": "Tam Coc", "city": "Ninh Binh", "kind": "nature", "must": false, "hours": 2},
+    {"name": "Ha Long Bay", "city": "Ha Long", "kind": "activity", "must": true, "hours": 6},
+    {"name": "Sung Sot Cave", "city": "Ha Long", "kind": "nature", "must": false, "hours": 1.5},
+    {"name": "Hoi An Ancient Town", "city": "Hoi An", "kind": "sight", "must": true, "hours": 3},
+    {"name": "Japanese Covered Bridge", "city": "Hoi An", "kind": "sight", "must": false, "hours": 0.5},
+    {"name": "An Bang Beach", "city": "Hoi An", "kind": "nature", "must": false, "hours": 3},
+    {"name": "Tra Que Vegetable Village", "city": "Hoi An", "kind": "activity", "must": false, "hours": 2.5},
+    {"name": "My Son Sanctuary", "city": "Hoi An", "kind": "sight", "must": false, "hours": 3},
+    {"name": "Ba Na Hills", "city": "Hoi An", "kind": "activity", "must": false, "hours": 5},
+    {"name": "Marble Mountains", "city": "Hoi An", "kind": "sight", "must": false, "hours": 2},
+    {"name": "War Remnants Museum", "city": "Ho Chi Minh City", "kind": "sight", "must": true, "hours": 2},
+    {"name": "Ben Thanh Market", "city": "Ho Chi Minh City", "kind": "shopping", "must": false, "hours": 1.5},
+    {"name": "Cu Chi Tunnels", "city": "Ho Chi Minh City", "kind": "activity", "must": false, "hours": 5},
+    {"name": "Bui Vien Walking Street", "city": "Ho Chi Minh City", "kind": "nightlife", "must": false, "hours": 2}
+  ]
+}
